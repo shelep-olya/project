@@ -45,5 +45,8 @@ app.use((err, req, res, next) => {
     message: err.message,
   });
 });
+app.get("/", (req, res) => {
+  res.send("Welcome to the API");
+});
 
 module.exports = app;
