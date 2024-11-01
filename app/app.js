@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(mongoSanitize());
 app.use(cookieParser());
 const corsOptions = {
-  origin: ["https://shelep-olya.github.io"],
+  origin: ["http://localhost:3000"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
   optionsSuccessStatus: 200,

@@ -47,7 +47,7 @@ const config = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "[name].[contenthash].css", // Output filename for CSS
+            filename: "[name].[contenthash].css",
         }),
         new webpack.DefinePlugin({
             "process.env": {
